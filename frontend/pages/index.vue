@@ -1,5 +1,5 @@
 <template>
-  <Tutorial />
+  <Markdown/>
 </template>
 
 <script>
