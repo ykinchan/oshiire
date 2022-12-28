@@ -2,7 +2,7 @@ package block
 
 import (
 	"fmt"
-	"../lib"
+	"github.com/ykinchan/Oshiire/backend/lib"
 )
 
 type Block struct {

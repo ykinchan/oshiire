@@ -3,7 +3,7 @@ package handler
 import (
 	"net/http"
 
-	"../block"
+	"github.com/ykinchan/Oshiire/backend/block"
 
 	"github.com/gin-gonic/gin"
 )

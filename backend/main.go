@@ -5,9 +5,9 @@ import (
     "time"
 
     "github.com/gin-gonic/gin"
-    "./block"
-    "./handler"
-    "./lib"
+    "github.com/ykinchan/Oshiire/backend/block"
+    "github.com/ykinchan/Oshiire/backend/handler"
+    "github.com/ykinchan/Oshiire/backend/lib"
     "github.com/joho/godotenv"
 
     "github.com/gin-contrib/cors"
