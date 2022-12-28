@@ -1,7 +1,7 @@
 package service
 
 import (
-    "/run/model"
+    "github.com/ykinchan/Oshiire/backend/model"
 )
 
 type BlockService struct {}
@@ -17,7 +17,7 @@ func (BlockService) SetBlock(block *model.Block) error {
 
 func (BlockService) GetBlockList() []model.Block {
     tests := make([]model.Block, 0)
-    err := DbEngine.Distinct("id", "title", "content").Limit(10, 0).Find(&tests)
+    err := DbEngine.Distinct("id", "type", "is_checked", "text").Limit(10, 0).Find(&tests)
     if err != nil {
         panic(err)
     }

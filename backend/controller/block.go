@@ -3,9 +3,8 @@ package controller
 import (
 	"github.com/gin-gonic/gin"
 	"net/http"
-	"/run/model"
-	"/run/service"
-	"strconv"
+	"github.com/ykinchan/Oshiire/backend/model"
+	"github.com/ykinchan/Oshiire/backend/service"
 )
 
 // ブロックを追加する

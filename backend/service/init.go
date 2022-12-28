@@ -4,19 +4,20 @@ import (
 	"errors"
 	"fmt"
 	"github.com/go-xorm/xorm"
-	"/run/model"
+	"github.com/ykinchan/Oshiire/backend/model"
 	"log"
+	"os"
 )
 
-var DbEngine *xorm.DbEngine
+var DbEngine *xorm.Engine
 
 func init() {
 	driverName := "mysql"
-	DsName := "root:root@(database:3306)/gin?charset=utf8"
+	DsName := os.Getenv("DB_USER") + ":" +  os.Getenv("DB_PASS") + "@(" + os.Getenv("DB_HOST") + ":" + os.Getenv("DB_PORT") + ")/oshiire?charset=utf8"
 	err := errors.New("")
 	DbEngine, err = xorm.NewEngine(driverName, DsName)
 	if err != nil && err.Error() != "" {
-		lob.Fatal(err.Error())
+		log.Fatal(err.Error())
 	}
 	DbEngine.ShowSQL(true)
     DbEngine.SetMaxOpenConns(2)

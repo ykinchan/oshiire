@@ -18,7 +18,7 @@ func RecordUaAndTime(c *gin.Context) {
 	logger.Info("incoming request", 
 		zap.String("path", c.Request.URL.Path),
 		zap.String("Ua", ua),
-		zap.Int("status", x.Writer.Status()),
+		zap.Int("status", c.Writer.Status()),
 		zap.Duration("elapsed", time.Now().Sub(oldTime)),
 	)
 }
