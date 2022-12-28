@@ -1,68 +1,76 @@
-# frontend
+# DEMO
+[all-in-one-kappa.vercel.app/](https://all-in-one-kappa.vercel.app/)
 
-## Build Setup
+# 界面
+![image](https://user-images.githubusercontent.com/16424854/126763700-721ecb56-4dbc-4581-b7ff-ddab7790576e.png)
 
-```bash
-# install dependencies
-$ npm install
 
-# serve with hot reload at localhost:3000
-$ npm run dev
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+# All-in-one是什么
+All-in-one 是一个开源的模块化内容构建编辑器，它不同于传统的文本编辑器，所有的内容都是以模块的概念来打造。灵感来自Notion
 
-# generate static project
-$ npm run generate
-```
+## 灵活的插拔
+所有的模块都以VUE组件的形式编写，可以灵活插拔。你可以用All-in-one编辑器构建一个模块化的内容平台，可以在一个页面里插入任何其他模块，就像Notion一样
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+### 纯净的输出
+所有组件保存的数据，都以Json的形式存储在Vuex里供不同组件调用
 
-## Special Directories
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+#### 🐞 由于不是用WYSIWYG的编辑器进行二次开发，目前在文本编辑方面有一些不能解决的Bug
 
-### `assets`
+* 当输入行大于等于2行时，键盘的上下按键没有办法处理光标在同组件的文本内容里上下移动
+* 内容无法跨模块复制
+* 其他一些小的问题
 
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+#### 👏 已实现的模块
+- [x] 纯文本
+- [x] 待办清单
+- [x] 标题1
+- [x] 标题2
+- [x] 标题3
+- [x] 符号列表
+- [x] 提示栏
+- [x] 组件的拖拽移动
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
 
-### `components`
+#### 🧑‍💻 待开发的模块
+- [ ] 事件节点组件
+- [ ] 图片上传组件
+- [ ] 表格组件
+- [ ] 看板组件
 
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
+***
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
+# what is All-in-one 
+All-in-one is an open source modular content construction editor. It is different from traditional text editors, and all content is built with the concept of modules. Inspired by Notion
 
-### `layouts`
+## Flexible plugging
+All modules are written in the form of VUE components, which can be flexibly inserted and removed. You can use the All-in-one editor to build a modular content platform, you can insert any other module in a page, just like Notion
 
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
+### Pure output
+The data saved by all components is stored in Vuex in the form of Json for different components to call
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
 
-### `pages`
+#### 🐞 Since it is not a secondary development with the WYSIWYG editor, there are currently some unsolvable bugs in text editing
 
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
+* When the input line is greater than or equal to 2 lines, the keyboard up and down keys can not handle the cursor to move up and down in the text content of the same component
+* Content cannot be copied across modules
+* Other minor issues
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
+#### 👏 Modules has been developed 
 
-### `plugins`
+- [x] Text
+- [x] Todo
+- [x] Heading1
+- [x] Heading2
+- [x] Heading3
+- [x] BulletedList
+- [x] Hint
+- [x] Drag and drop of components
 
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
+#### 🧑‍💻 Modules to be developed
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+- [ ] EventNode component
+- [ ] Image upload component
+- [ ] Form component
+- [ ] Kanban components

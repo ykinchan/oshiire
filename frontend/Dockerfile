@@ -1,6 +1,6 @@
 FROM node:16
 
-RUN npm install -g @vue/cli@4.4.6
+RUN npm install -g @vue/cli
 
 WORKDIR /app
 
