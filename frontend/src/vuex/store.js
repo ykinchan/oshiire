@@ -43,7 +43,7 @@ const state = {
         text: "当输入行大于等于2行时，键盘的上下按键没有办法处理光标在同组件的文本内容里上下移动",
       },
     },
-    { type: "BulletedList", data: { text: "内容无法跨模块复制" } },
+    { type: "BulletedList", data: { isChecked: false, text: "内容无法跨模块复制" } },
     { type: "BulletedList", data: { text: "其他一些小的问题" } },
     { type: "text", data: { text: "" } },
     { type: "hint", data: { text: "👏 已实现的模块" } },
